@@ -1,0 +1,14 @@
+.logo{
+    margin: -1em 1em;
+    width: 4em;
+    
+}
+.d-block{
+    height: 490px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,-0.25rem);
+    padding-left: var(--bs-gutter-x,-0.25rem);
+    margin-right: auto;
+    margin-left: auto;
