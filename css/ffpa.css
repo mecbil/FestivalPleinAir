@@ -122,9 +122,10 @@ h5{
     flex-wrap: wrap; 
 }
 .card{
-    margin-right: 4em;
+    margin-right: 2em;
+    margin-left: 2em;
     width: 17em;
-    margin-top: 1em;
+    margin-top: 0.2em;
     margin-bottom: 0.5em;
 }
 .card button{
