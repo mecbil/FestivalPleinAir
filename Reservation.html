@@ -33,7 +33,7 @@
     
     <div class="container ">
       <section class="Main">
-        <h1>Programmes</h1>
+        <h1>Réservation</h1>
         <span class="Programmes">
           <div id="accordion">
                 <p class="text-center">
@@ -56,36 +56,153 @@
                     <div id="accordionjour5">
                       <p class="text-center">
                         <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOnejour5" aria-expanded="false" aria-controls="collapseOnejour5">
-                          Seance 1<br>Film1
+                          Séance 1<br>Shutter Island
                           
                         </button>
                         <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseTwojour5" aria-expanded="false" aria-controls="collapseTwojour5">
-                          Seance 2<br>Film2
+                          Séance 2<br>Drive
                         </button>
                         <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseThreejour5" aria-expanded="false" aria-controls="collapseThreejour5">
-                          Seance 3<br>Film3
+                          Séance 3<br>Orange mécanique
                         </button>
                       </p>
                       <div id="collapseOnejour5" class="collapse" aria-labelledby="headingOnejour5" data-parent="#accordionjour5">
-                        <div >
-                          <p class="text-center">
-                            
-                          </p>
-                        </div>
-                      </div>
+                        <section id="reservation" class="container-fluid">
+                          <form>
+                              <div class="row" id="champs-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <label for="Nom">Nom :</label> 
+                                      <input class="form-control" type="text" id="Nom" placeholder="Nom">
+                                      <br>
+                                      <label for="Nom">Téléphone :</label>
+                                      <input class="form-control" type="tel" 
+                                      pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                      id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+                                      <br>
+                                      <label for="nbp">Nombre de personnes : </label>
+                                      <br>
+                                      <select class="custom-select" id="nbp">
+                                        <option selected>Selection</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="1">5</option>
+                                        <option value="2">6</option>
+                                        <option value="3">7</option>
+                                        <option value="3">8</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="prenom">Prénom :</label>
+                                    <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+                                    <br>
+                                    <label for="e-mail">E-mail :</label>
+                                    <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+                                    <br>
+                                    <p>Séance 1: Le 05/08/2021, 18h-20h , Titre : Shutter Island</p>
+
+                                  </div>
+                              </div>
+                              <div class="row text-center" id="bouton-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="button" class="btn orange  float-right">Réservez</button>
+                                  </div>        
+                              </div>
+                          </form> 
+                      </section>
+                    </div>
                       <div id="collapseTwojour5" class="collapse" aria-labelledby="headingTwojour5" data-parent="#accordionjour5">
-                        <div >
-                          <p class="text-center">
-                            
-                          </p>                  
-                        </div>
+                        <section id="reservation" class="container-fluid">
+                          <form>
+                              <div class="row" id="champs-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <label for="Nom">Nom :</label> 
+                                      <input class="form-control" type="text" id="Nom" placeholder="Nom">
+                                      <br>
+                                      <label for="Nom">Téléphone :</label>
+                                      <input class="form-control" type="tel" 
+                                      pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                      id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+                                      <br>
+                                      <label for="nbp">Nombre de personnes : </label>
+                                      <br>
+                                      <select class="custom-select" id="nbp">
+                                        <option selected>Selection</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="1">5</option>
+                                        <option value="2">6</option>
+                                        <option value="3">7</option>
+                                        <option value="3">8</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="prenom">Prénom :</label>
+                                    <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+                                    <br>
+                                    <label for="e-mail">E-mail :</label>
+                                    <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+                                    <br>
+                                    <p>Séance 2: Le 05/08/2021, 20h-22h , Titre : Drive</p>
+
+                                  </div>
+                              </div>
+                              <div class="row text-center" id="bouton-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="button" class="btn orange  float-right">Réservez</button>
+                                  </div>        
+                              </div>
+                          </form> 
+                      </section>
                       </div>
                       <div id="collapseThreejour5" class="collapse" aria-labelledby="headingThreejour5" data-parent="#accordionjour5">
-                        <div >
-                            <p class="text-center">
-                              
-                            </p> 
-                        </div>
+                        <section id="reservation" class="container-fluid">
+                          <form>
+                              <div class="row" id="champs-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <label for="Nom">Nom :</label> 
+                                      <input class="form-control" type="text" id="Nom" placeholder="Nom">
+                                      <br>
+                                      <label for="Nom">Téléphone :</label>
+                                      <input class="form-control" type="tel" 
+                                      pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                      id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+                                      <br>
+                                      <label for="nbp">Nombre de personnes : </label>
+                                      <br>
+                                      <select class="custom-select" id="nbp">
+                                        <option selected>Selection</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="1">5</option>
+                                        <option value="2">6</option>
+                                        <option value="3">7</option>
+                                        <option value="3">8</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="prenom">Prénom :</label>
+                                    <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+                                    <br>
+                                    <label for="e-mail">E-mail :</label>
+                                    <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+                                    <br>
+                                    <p>Séance 3:Le 05/08/2021, 22h-24h , Titre : Orange mécanique</p>
+
+                                  </div>
+                              </div>
+                              <div class="row text-center" id="bouton-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="button" class="btn orange  float-right">Réservez</button>
+                                  </div>        
+                              </div>
+                          </form> 
+                      </section>
                       </div>
                     </div>
                   </p>
@@ -98,38 +215,156 @@
                     <div id="accordionjour6">
                       <p class="text-center">
                         <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOnejour6" aria-expanded="false" aria-controls="collapseOnejour6">
-                          Seance 1<br>
-                          Film4
+                          Séance 1<br>
+                          Le Loup de Wall Street
                         </button>
                         <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseTwojour6" aria-expanded="false" aria-controls="collapseTwojour6">
-                          Seance 2<br>
-                          Film5
+                          Séance 2<br>
+                          Shining
                         </button>
                         <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseThreejour6" aria-expanded="false" aria-controls="collapseThreejour6">
-                          Seance 3<br>
-                          Film6
+                          Séance 3<br>
+                          Requiem for a Dream
                         </button>
                       </p>
                       <div id="collapseOnejour6" class="collapse" aria-labelledby="headingOnejour6" data-parent="#accordionjour6">
-                        <div >
-                          <p class="text-center">
-                            film 1
-                          </p>
-                        </div>
+                        <section id="reservation" class="container-fluid">
+                          <form>
+                              <div class="row" id="champs-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <label for="Nom">Nom :</label> 
+                                      <input class="form-control" type="text" id="Nom" placeholder="Nom">
+                                      <br>
+                                      <label for="Nom">Téléphone :</label>
+                                      <input class="form-control" type="tel" 
+                                      pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                      id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+                                      <br>
+                                      <label for="nbp">Nombre de personnes : </label>
+                                      <br>
+                                      <select class="custom-select" id="nbp">
+                                        <option selected>Selection</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="1">5</option>
+                                        <option value="2">6</option>
+                                        <option value="3">7</option>
+                                        <option value="3">8</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="prenom">Prénom :</label>
+                                    <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+                                    <br>
+                                    <label for="e-mail">E-mail :</label>
+                                    <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+                                    <br>
+                                    <p>Séance 1: Le 06/08/2021, 18h-20h , Titre : Le Loup de Wall Street</p>
+
+                                  </div>
+                              </div>
+                              <div class="row text-center" id="bouton-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="button" class="btn orange  float-right">Réservez</button>
+                                  </div>        
+                              </div>
+                          </form> 
+                      </section>
                       </div>
                       <div id="collapseTwojour6" class="collapse" aria-labelledby="headingTwojour6" data-parent="#accordionjour6">
-                        <div >
-                          <p class="text-center">
-                            film 2
-                          </p>                  
-                        </div>
+                        <section id="reservation" class="container-fluid">
+                          <form>
+                              <div class="row" id="champs-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <label for="Nom">Nom :</label> 
+                                      <input class="form-control" type="text" id="Nom" placeholder="Nom">
+                                      <br>
+                                      <label for="Nom">Téléphone :</label>
+                                      <input class="form-control" type="tel" 
+                                      pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                      id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+                                      <br>
+                                      <label for="nbp">Nombre de personnes : </label>
+                                      <br>
+                                      <select class="custom-select" id="nbp">
+                                        <option selected>Selection</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="1">5</option>
+                                        <option value="2">6</option>
+                                        <option value="3">7</option>
+                                        <option value="3">8</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="prenom">Prénom :</label>
+                                    <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+                                    <br>
+                                    <label for="e-mail">E-mail :</label>
+                                    <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+                                    <br>
+                                    <p>Séance 2: Le 06/08/2021, 20h-22h , Titre : Shining</p>
+
+                                  </div>
+                              </div>
+                              <div class="row text-center" id="bouton-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="button" class="btn orange  float-right">Réservez</button>
+                                  </div>        
+                              </div>
+                          </form> 
+                      </section>
                       </div>
                       <div id="collapseThreejour6" class="collapse" aria-labelledby="headingThreejour6" data-parent="#accordionjour6">
-                        <div >
-                            <p class="text-center">
-                              film 3
-                            </p> 
-                        </div>
+                        <section id="reservation" class="container-fluid">
+                          <form>
+                              <div class="row" id="champs-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <label for="Nom">Nom :</label> 
+                                      <input class="form-control" type="text" id="Nom" placeholder="Nom">
+                                      <br>
+                                      <label for="Nom">Téléphone :</label>
+                                      <input class="form-control" type="tel" 
+                                      pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                      id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+                                      <br>
+                                      <label for="nbp">Nombre de personnes : </label>
+                                      <br>
+                                      <select class="custom-select" id="nbp">
+                                        <option selected>Selection</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="1">5</option>
+                                        <option value="2">6</option>
+                                        <option value="3">7</option>
+                                        <option value="3">8</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="prenom">Prénom :</label>
+                                    <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+                                    <br>
+                                    <label for="e-mail">E-mail :</label>
+                                    <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+                                    <br>
+                                    <p>Séance 3: Le 06/08/2021, 22h-24h , Titre : Requiem for a Dream</p>
+
+                                  </div>
+                              </div>
+                              <div class="row text-center" id="bouton-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="button" class="btn orange  float-right">Réservez</button>
+                                  </div>        
+                              </div>
+                          </form> 
+                      </section>
+
                       </div>
                     </div>
 
@@ -143,38 +378,157 @@
                     <div id="accordionjour7">
                       <p class="text-center">
                         <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOnejour7" aria-expanded="false" aria-controls="collapseOnejour7">
-                          Seance 1<br>
-                          Film7
+                          Séance 1<br>
+                          Into the Wild
                         </button>
                         <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseTwojour7" aria-expanded="false" aria-controls="collapseTwojour7">
-                          Seance 2<br>
-                          Film8
+                          Séance 2<br>
+                          The Grand Budapest Hotel
                         </button>
                         <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseThreejour7" aria-expanded="false" aria-controls="collapseThreejour7">
-                          Seance 3<br>
-                          Film9
+                          Séance 3<br>
+                          Gone Girl
                         </button>
                       </p>
                       <div id="collapseOnejour7" class="collapse" aria-labelledby="headingOnejour7" data-parent="#accordionjour7">
-                        <div >
-                          <p class="text-center">
-                            film 1
-                          </p>
-                        </div>
+                        <section id="reservation" class="container-fluid">
+                          <form>
+                              <div class="row" id="champs-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <label for="Nom">Nom :</label> 
+                                      <input class="form-control" type="text" id="Nom" placeholder="Nom">
+                                      <br>
+                                      <label for="Nom">Téléphone :</label>
+                                      <input class="form-control" type="tel" 
+                                      pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                      id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+                                      <br>
+                                      <label for="nbp">Nombre de personnes : </label>
+                                      <br>
+                                      <select class="custom-select" id="nbp">
+                                        <option selected>Selection</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="1">5</option>
+                                        <option value="2">6</option>
+                                        <option value="3">7</option>
+                                        <option value="3">8</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="prenom">Prénom :</label>
+                                    <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+                                    <br>
+                                    <label for="e-mail">E-mail :</label>
+                                    <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+                                    <br>
+                                    <p>Séance 1: Le 07/08/2021, 18h-20h , Titre :  Into the Wild</p>
+
+                                  </div>
+                              </div>
+                              <div class="row text-center" id="bouton-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="button" class="btn orange  float-right">Réservez</button>
+                                  </div>        
+                              </div>
+                          </form> 
+                      </section>
                       </div>
                       <div id="collapseTwojour7" class="collapse" aria-labelledby="headingTwojour7" data-parent="#accordionjour7">
-                        <div >
-                          <p class="text-center">
-                            film 2
-                          </p>                  
-                        </div>
+                        <section id="reservation" class="container-fluid">
+                          <form>
+                              <div class="row" id="champs-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <label for="Nom">Nom :</label> 
+                                      <input class="form-control" type="text" id="Nom" placeholder="Nom">
+                                      <br>
+                                      <label for="Nom">Téléphone :</label>
+                                      <input class="form-control" type="tel" 
+                                      pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                      id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+                                      <br>
+                                      <label for="nbp">Nombre de personnes : </label>
+                                      <br>
+                                      <select class="custom-select" id="nbp">
+                                        <option selected>Selection</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="1">5</option>
+                                        <option value="2">6</option>
+                                        <option value="3">7</option>
+                                        <option value="3">8</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="prenom">Prénom :</label>
+                                    <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+                                    <br>
+                                    <label for="e-mail">E-mail :</label>
+                                    <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+                                    <br>
+                                    <p>Séance 2: Le 07/08/2021, 20h-22h , Titre : The Grand Budapest Hotel </p>
+
+                                  </div>
+                              </div>
+                              <div class="row text-center" id="bouton-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="button" class="btn orange  float-right">Réservez</button>
+                                  </div>        
+                              </div>
+                          </form> 
+                      </section>
+
                       </div>
                       <div id="collapseThreejour7" class="collapse" aria-labelledby="headingThreejour7" data-parent="#accordionjour7">
-                        <div >
-                            <p class="text-center">
-                              film 3
-                            </p> 
-                        </div>
+                        <section id="reservation" class="container-fluid">
+                          <form>
+                              <div class="row" id="champs-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <label for="Nom">Nom :</label> 
+                                      <input class="form-control" type="text" id="Nom" placeholder="Nom">
+                                      <br>
+                                      <label for="Nom">Téléphone :</label>
+                                      <input class="form-control" type="tel" 
+                                      pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                      id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+                                      <br>
+                                      <label for="nbp">Nombre de personnes : </label>
+                                      <br>
+                                      <select class="custom-select" id="nbp">
+                                        <option selected>Selection</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="1">5</option>
+                                        <option value="2">6</option>
+                                        <option value="3">7</option>
+                                        <option value="3">8</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="prenom">Prénom :</label>
+                                    <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+                                    <br>
+                                    <label for="e-mail">E-mail :</label>
+                                    <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+                                    <br>
+                                    <p>Séance 3: Le 07/08/2021, 22h-24h , Titre : Gone Girl</p>
+
+                                  </div>
+                              </div>
+                              <div class="row text-center" id="bouton-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="button" class="btn orange  float-right">Réservez</button>
+                                  </div>        
+                              </div>
+                          </form> 
+                      </section>
+
                       </div>
                     </div>
 
@@ -188,38 +542,155 @@
                     <div id="accordionjour8">
                       <p class="text-center">
                         <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOnejour8" aria-expanded="false" aria-controls="collapseOnejour8">
-                          Seance 1<br>
-                          Film10
+                          Séance 1<br>
+                          Whiplash
                         </button>
                         <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseTwojour8" aria-expanded="false" aria-controls="collapseTwojour8">
-                          Seance 2<br>
-                          Film11
+                          Séance 2<br>
+                          Full Metal Jacket
                         </button>
                         <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseThreejour8" aria-expanded="false" aria-controls="collapseThreejour8">
-                          Seance 3<br>
-                          Film12
+                          Séance 3<br>
+                          American Beauty
                         </button>
                       </p>
                       <div id="collapseOnejour8" class="collapse" aria-labelledby="headingOnejour8" data-parent="#accordionjour8">
-                        <div >
-                          <p class="text-center">
-                            film 1
-                          </p>
-                        </div>
+                        <section id="reservation" class="container-fluid">
+                          <form>
+                              <div class="row" id="champs-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <label for="Nom">Nom :</label> 
+                                      <input class="form-control" type="text" id="Nom" placeholder="Nom">
+                                      <br>
+                                      <label for="Nom">Téléphone :</label>
+                                      <input class="form-control" type="tel" 
+                                      pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                      id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+                                      <br>
+                                      <label for="nbp">Nombre de personnes : </label>
+                                      <br>
+                                      <select class="custom-select" id="nbp">
+                                        <option selected>Selection</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="1">5</option>
+                                        <option value="2">6</option>
+                                        <option value="3">7</option>
+                                        <option value="3">8</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="prenom">Prénom :</label>
+                                    <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+                                    <br>
+                                    <label for="e-mail">E-mail :</label>
+                                    <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+                                    <br>
+                                    <p>Séance 1: Le 08/08/2021, 18h-20h , Titre : Whiplash</p>
+
+                                  </div>
+                              </div>
+                              <div class="row text-center" id="bouton-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="button" class="btn orange  float-right">Réservez</button>
+                                  </div>        
+                              </div>
+                          </form> 
+                      </section>
                       </div>
                       <div id="collapseTwojour8" class="collapse" aria-labelledby="headingTwojour8" data-parent="#accordionjour8">
-                        <div >
-                          <p class="text-center">
-                            film 2
-                          </p>                  
-                        </div>
+                        <section id="reservation" class="container-fluid">
+                          <form>
+                              <div class="row" id="champs-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <label for="Nom">Nom :</label> 
+                                      <input class="form-control" type="text" id="Nom" placeholder="Nom">
+                                      <br>
+                                      <label for="Nom">Téléphone :</label>
+                                      <input class="form-control" type="tel" 
+                                      pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                      id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+                                      <br>
+                                      <label for="nbp">Nombre de personnes : </label>
+                                      <br>
+                                      <select class="custom-select" id="nbp">
+                                        <option selected>Selection</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="1">5</option>
+                                        <option value="2">6</option>
+                                        <option value="3">7</option>
+                                        <option value="3">8</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="prenom">Prénom :</label>
+                                    <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+                                    <br>
+                                    <label for="e-mail">E-mail :</label>
+                                    <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+                                    <br>
+                                    <p>Séance 2: Le 08/08/2021, 20h-22h , Titre : Full Metal Jacket</p>
+
+                                  </div>
+                              </div>
+                              <div class="row text-center" id="bouton-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="button" class="btn orange  float-right">Réservez</button>
+                                  </div>        
+                              </div>
+                          </form> 
+                      </section>
                       </div>
                       <div id="collapseThreejour8" class="collapse" aria-labelledby="headingThreejour8" data-parent="#accordionjour8">
-                        <div >
-                            <p class="text-center">
-                              film 3
-                            </p> 
-                        </div>
+                        <section id="reservation" class="container-fluid">
+                          <form>
+                              <div class="row" id="champs-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                      <label for="Nom">Nom :</label> 
+                                      <input class="form-control" type="text" id="Nom" placeholder="Nom">
+                                      <br>
+                                      <label for="Nom">Téléphone :</label>
+                                      <input class="form-control" type="tel" 
+                                      pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                      id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+                                      <br>
+                                      <label for="nbp">Nombre de personnes : </label>
+                                      <br>
+                                      <select class="custom-select" id="nbp">
+                                        <option selected>Selection</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="3">4</option>
+                                        <option value="1">5</option>
+                                        <option value="2">6</option>
+                                        <option value="3">7</option>
+                                        <option value="3">8</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="prenom">Prénom :</label>
+                                    <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+                                    <br>
+                                    <label for="e-mail">E-mail :</label>
+                                    <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+                                    <br>
+                                    <p>Séance 3: Le 08/08/2021, 22h-24h , Titre : American Beauty</p>
+
+                                  </div>
+                              </div>
+                              <div class="row text-center" id="bouton-reservation">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="button" class="btn orange  float-right">Réservez</button>
+                                  </div>        
+                              </div>
+                          </form> 
+                      </section>
                       </div>
                     </div>
                   </p> 
