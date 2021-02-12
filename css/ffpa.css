@@ -1,14 +1,154 @@
+html {
+  font-family: "Roboto", sans-serif;
+
+}
+
+
 .logo{
-    margin: -1em 1em;
-    width: 4em;
-    
+    margin: -1.4em 0 -1.4em 1em;
+    width: 5.4em;
+}
+h1{
+    color: #E78200;
+    margin: 0.6em ;
+}
+.navbar, .Footer{
+    color: #B1B1B1;
+    background-color: #B1B1B1;
+}
+.nav-link, .text-center{
+color:#083B66;
+}
+
+.navbar-toggler {
+    color: #083B66;
+}
+
+#navbarContent{
+    text-align: center;
 }
 .d-block{
-    height: 490px;
+    height: 450px;
 }
+i{
+    margin-left: 1em;
+
+}
+
+.footer{
+    display:flex;
+    background-color: #B1B1B1;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer img{
+    width: 2.8em;
+    margin-top: -1.7em;
+    margin-left: -0em;
+}
+.footer p{
+    color: #083B66;
+    font-size: 1.2em;
+    margin-right: 0.4em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+#carouselExampleIndicators{
+    background-color: #B1B1B1;
+}
+.description{
+    display: flex;
+}
+.description img{
+    width: 50%;
+    border-radius: 1em;
+    margin-right: 2em;
+}
+.actualites{
+    display: flex;
+}
+.actualites img{
+    width: 33%;
+    border-radius: 1em;
+    margin-right: 2em;
+}
+.festival{
+    display: flex;
+}
+.festival img{
+    width: 45%;
+    border-radius: 1em;
+    margin-left: 2em;
+}
+.festival p{
+    margin-left: 2em;
+}
+.btn {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding:0.6em;
+    margin: 0.4em;
+}
+
+.Orange{
+    background-color: #E78200;
+    color: white;
+    border-radius: 1em;
+    padding: 0.4em;
+}
+.grey{
+    background-color: #B1B1B1;
+    color: white;
+}
+.synopsis{
+    font-size: 0.75em;
+}
+.film article{
+    margin-top: -1em;
+    width: 18em;
+}
+
+.infos{
+    margin-left: 4em;
+}
+h5{
+    color: #E78200;
+}
+
+.film{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+.card{
+    margin-right: 4em;
+    width: 17em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.card button{
+    margin-top: -0.8em;
+    padding : 0.5em 1.2em;
+    margin-left: 4em;
+}
+.card img{
+    width: 100%;
+    height: 6em;
+}
+
+.film a{
+    text-decoration: none;
+    color: black;
+}
+
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     width: 100%;
     padding-right: var(--bs-gutter-x,-0.25rem);
     padding-left: var(--bs-gutter-x,-0.25rem);
     margin-right: auto;
     margin-left: auto;
+}
+/* .Main{
+    height: 430px; 
+} */
