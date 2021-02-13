@@ -32,7 +32,49 @@
      <!-- Main -->
     
     <div class="container ">
-       dsfgdfg
+      <h1>Contactez-nous</h1>
+      <section id="contact" class="container-fluid">
+        
+          <div class="col-xs-3 col-sm-5 col-md-5 col-lg-4">
+            <br>
+            <label for="Nom">Nom :</label> 
+            <input class="form-control" type="text" id="Nom" placeholder="Nom">
+            <br>
+            <label for="prenom">Prénom :</label>
+            <input class="form-control" type="text" id="prenom" placeholder="Prénom">
+            <br>
+          </div>
+          <div class="col-xs-3 col-sm-5 col-md-5 col-lg-4">
+            <br>
+            <label for="Nom">Téléphone :</label>
+            <input class="form-control" type="tel" 
+            pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+            id="telephone" placeholder="Téléphone : Format: 99-99-99-99-99">
+            <br>
+            <label for="e-mail">E-mail :</label>
+            <input class="form-control" type="email" pattern=".+@globex.com" id="e-mail" placeholder="E-mail@adress.com">
+            <br>
+         
+            <div class="row text-left" id="bouton-reservation">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <a href="Reservation.html" class="btn orange">Réservez</a>
+              </div>        
+            </div>
+          </div>
+          
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" id="coordonnées">
+          <p class="text-center">Nos coordonnées</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735531420007!2d2.306760951521382!3d48.87968700705881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1572431930302!5m2!1sfr!2sfr"></iframe>
+          <br>
+          <br>
+          <p><i class="fas fa-map-marker-alt"></i>Parc Monceau Paris</p>
+          <p><i class="fas fa-phone-volume"></i>01-23-45-67-89</p>
+          <p><i class="fas fa-envelope"></i><a href="#">contact@festivalpleinair.com</a></p>
+          
+        </div>
+      </section>
+      
     </div>
     
     <!-- Footer -->
