@@ -13,7 +13,6 @@ h1{
     margin: 0.6em ;
 }
 .navbar, .Footer{
-    color: #B1B1B1;
     background-color: #B1B1B1;
 }
 .nav-link, .text-center{
@@ -142,7 +141,7 @@ h2 img{
 iframe{
     width: 100%;
 }
-#coordonnées i{
+#coordonnees i{
     width: 1.5em;
     font-size: 1.4em;
     position: relative;
@@ -155,6 +154,7 @@ iframe{
     width: 17em;
     margin-top: 0.2em;
     margin-bottom: 0.5em;
+    cursor: pointer;
 }
 .card .btn {
     margin-top: -0.8em;
